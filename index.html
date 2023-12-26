@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
 
 </head>
 <body>
@@ -19,7 +19,7 @@
                 <h1>PyMedia</h1> 
                 <div class="searchbar">
                     <input type="text">
-                    <button type="submit"><i class="fas fa-search" style="color: #333;"></i></button>
+                    <button type="submit"><i class="fas fa-search" style="color:lightgray;"></i></button>
                 </div>
             </div>
             <ul>
@@ -53,6 +53,8 @@
         </nav>
     </section>
     <section class="body">
+        <!-- <span id="mobile-menu"><i class="fas fa-times"></i></span> -->
+
         <div class="left-sidebar">
             <div class="heading">
                 <div class="image">
@@ -120,7 +122,403 @@
             </div>
         </div>
         <div class="main-content">
-            <h2>Stories</h2>
+            <div class="post">
+                <h4 id="title">Stories</h4>
+                <div class="stories">
+                        
+                    <div class="story first">
+                        <a href="#">
+                            <div class="story-image" id="me">
+                                <img src="images/thumb-card3.png" alt="">
+                            </div>
+                            <div class="image">
+                                <a href="#"><i class="fas fa-plus"></i></a>   
+                            </div>
+                            <h5 class="t-story">Add story</h3>
+                        </a>
+
+                    </div>
+                    <div class="story last">
+                        <a href="#">
+                            <div class="story-image">
+                                <img src="images/post-4.png" alt="">
+                            </div>
+                            <!-- <div class="image">
+                                <a href="#"><i class="fas fa-user"></i></a>   
+                            </div> -->
+                            <h5 class="t-story">Bongani</h3>
+
+                        </a>
+                    </div>
+                    <div class="story last">
+                        <a href="#">
+                            <div class="story-image">
+                                <img src="images/blog4.png" alt="">
+                            </div>
+                            <!-- <div class="image">
+                                <a href="#"><i class="fas fa-user"></i></a>   
+                            </div> -->
+                            <h5 class="t-story">Frederick</h3>
+
+                        </a>
+                    </div>
+                    <div class="story">
+                        <a href="#">
+                            <div class="story-image">
+                                <img src="images/blog3.png" alt="">
+                            </div>
+                            <!-- <div class="image">
+                                <a href="#"><i class="fas fa-user"></i></a>   
+                            </div> -->
+                            <h5 class="t-story">John</h3>
+
+                        </a>
+                    </div>
+                    <div class="story">
+                        <a href="#">
+                            <div class="story-image">
+                                <img src="images/blog2.png" alt="">
+                            </div>
+                            <!-- <div class="image">
+                                <a href="#"><i class="fas fa-user"></i></a>   
+                            </div> -->
+                            <h5 class="t-story">Peter</h3>
+
+                        </a>
+                    </div>
+                    <div class="story">
+                        <a href="#">
+                            <div class="story-image">
+                                <img src="images/blog1.png" alt="">
+                            </div>
+                            <!-- <div class="image">
+                                <a href="#"><i class="fas fa-user"></i></a>   
+                            </div> -->
+                            <h5 class="t-story">Herbert</h3>
+
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Bongani</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/thumb-card3.png" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Bongani</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt a expedita praesentium officiis consectetur laboriosam esse dolor quos minima, officia laudantium at accusamus veniam beatae quo nihil porro ea cupiditate!</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Agnes</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <div class="text-post">
+                        <h2>Learn html, css and js in two weeks</h2>
+                    </div>
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>12</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>159</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>17</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Agnes</h5> Learn web development for free with PyDanny21</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Habiba</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item" >
+                    <div class="video-post">
+                        <video src="video/b20870c59d2742929ccf07ac165d5c87.mp4" controls></video>
+                    </div>
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="fas fa-heart" style='color:red;'></i><span>12</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>159</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>17</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Habiba</h5> Ejoying my life on the beach with Godly by Omalay</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Frederick</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item" >
+                    <div class="video-post">
+                        <video src="video/VID_20230602_225629.mp4" controls></video>
+                    </div>
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>12</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>159</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>17</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Frederick</h5> Fantastic Church service on Christmas day</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Philip</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/post-4.png" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Philip</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Filson</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/post-10.jpg" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Filson</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Richie</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/blog4.png" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Richie</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Frederick</h4></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/blog3.png" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Frederick</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Asiedu</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/blog2.png" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Asiedu</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Malick</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/blog1.png" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Malick</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Sylvester</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/post-7.jpg" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Sylvester</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Jacob</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/post-6.png" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Jacob</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="post">
+                <div class="post-user">
+                    <div class="post-img">
+                        <div class="image">
+                            <a href="#"><i class="fas fa-user"></i></a>
+                        </div>
+                        <div class="list">
+                            <a href="#"><h4>Mary</h2></a>
+                        </div>
+                    </div>
+                    <a href="#" id="post-menu"><h3>&DotDot;</h3> </a>
+                </div>
+                <div class="post-item">
+                    <img src="images/post-5.png" alt="">
+                </div>
+                <div class="post-user">
+                    <div class="post-link">
+                        <a href="#"><i class="far fa-heart"></i><span>120</span></a>
+                        <a href="#"><i class="far fa-comment"></i><span>459</span></a>
+                        <a href="#"><i class="fas fa-share"></i><span>77</span></a>
+                    </div>
+                </div>
+                <span id="description"><h5>Mary</h5> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
         </div>
         <div class="right-sidebar">
             <div class="heading">
@@ -201,8 +599,21 @@
 
             <a href="#" id="more"><h4>See all</h3></a>
         </div>
+        <div class="nav-mobile" id="bottomNav">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-video"></i></a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-store"></i></a></li>
+                <li><a href="#"><i class="fas fa-users"></i></a></li>
+                <!-- <li><a href="#"><i class="fas fa-gamepad"></i></a></li> -->
+            </ul>
+            <!-- <span><i class="fas fa-equiv"></i></span> -->
+        </div>
+
     </section>
-    <footer></footer>
+  
     <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 </html>
