@@ -51,6 +51,10 @@ nav{
     font-family: sans-serif;
 }
 
+.logo a{
+    text-decoration: none;
+    color: var(--color-secondary);
+}
 .searchbar{
     background: var(--color-secondary);
     width: 70%;
@@ -150,7 +154,7 @@ i {
     bottom: 0;
     height: fit-content;
     z-index: 999;
-    /* margin: 50% 0; */
+    margin: -10px 0;
     /* justify-content: center; */
 }
 .nav-mobile ul{
@@ -383,8 +387,225 @@ i {
     padding: 10px;
 }
 
+
+.notification{
+    display: none;
+    width: 0;
+    height: fit-content;
+    /* max-height: fit-content; */
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    background: #033f3f;
+    padding: 20px;
+}
+
+.more-height{
+    display: block;
+    width: 300px;
+}
+
+.notification-heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.notification-container{
+    width: 100%;
+    height: 100%;
+}
+
+.notification-item{
+    display: flex;
+}
+
+.notification-item .image{
+    flex-basis: 20%;
+}
+
+.item-message{
+    flex-basis: 80%;
+}
+
+#more{
+    text-decoration: none;
+    color: #fff;
+    width: 0px;
+}
+/* ----------------------------Profilepage--------------------- */
+.Prof{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    padding: 20px;
+    margin: auto;
+    background: #fff;
+    margin-top: 20px;
+}
+.image a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.image a h2 {
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.settings {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    display: none;
+    width: 0;
+    background: rgba(211, 211, 211,0.7);
+    /* background:#033f3f; */
+    border-radius: 4px;
+    transition: width 2s ease;
+}
+
+.settings-width{
+    width: 50%;
+    transition: width 2s ease;
+    display: block;
+
+}
+.settings-large-width{
+    width: 20%;
+    transition: width 2s ease;
+    display: block;
+
+}
+.set{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.set ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+.set ul li{
+    display: inline-flex;
+    padding: 7px;
+}
+
+.set ul li:hover{
+    opacity: 0.7;
+}
+
+.set ul li:last-child a{
+    color: red;
+}
+.set a{
+    text-decoration: none;
+    color: #333;
+}
+
+.profile-info{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.profile-image{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-image img{
+    width: 100%;
+    height: 100%;
+}
+.profile-info h3,.profile-info hr,.profile-info p,button{
+    margin: 10px;
+}
+
+.edit-profile{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+.edit-profile button{
+    width: 100px;
+    color: #fff;
+    padding: 10px;
+    background: var(--color-primary);
+    outline: none;
+    border: 3px solid var(--color-primary);
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.user-post-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,4fr);
+    padding-top: 20px;
+}
+.user-post-item {
+    width: 100%;
+    height: 225px;
+}
+.user-post-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.user-post-filter{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.user-post-filter ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.user-post-filter ul li{
+    width: 80px;
+    color: #fff;
+    padding: 20px;
+    outline: none;
+    /* border: 3px solid var(--color-primary); */
+    font-size: medium;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-post-filter i{
+    /* color: #033f3f; */
+    color: var(--color-primary);
+
+}
+
 /* ----------------Mobile---------------- */
 @media(max-width:700px){
+    /* homepage */
     .left-sidebar{
         display: none;
 
@@ -435,4 +656,34 @@ i {
         margin-left: 15px;
     }
 
+    /* Profilepage */
+    .settings {
+        right: -2px;
+    }
+
+
+    .Prof{
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+        overflow: hidden;
+    }
+    .profile-info{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .profile-image{
+        width: 150px;
+        height: 150px;
+    }
+    .user-post-container{
+        gap: 5px;
+    }
+    .user-post-item {
+        width: 100%;
+        height: 120px;
+    }
+
+
 }
+
