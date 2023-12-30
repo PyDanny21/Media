@@ -20,6 +20,39 @@ function toggleMenu() {
     };
 };
 
+const Input=document.getElementById('input');
+const Btn=document.getElementById('btn');
+Input.addEventListener('keyup',()=>{
+    const typing=Input.value;
+    const changeBtn=typing==''?Btn.innerHTML='<i class="fas fa-microphone">':Btn.innerHTML='<i class="fas fa-paper-plane">';
+});
+
+
+// Chat-messages
+let messages=document.querySelectorAll('.chat-message');
+
+messages.forEach((message)=>{
+    message.addEventListener('click',()=>{
+        if (window.innerWidth<=700) {        
+            const chatDisplay=document.querySelector('.chat-display');
+            const messageCont=document.querySelector('.chat-message-container');
+            chatDisplay.style.display='block';
+            messageCont.style.display='none';
+        };
+     
+    });
+});
+
+// show messages
+const Show=document.getElementById('showmessages');
+Show.addEventListener('click',()=>{
+    if (window.innerWidth<=700) {        
+        const chatDisplay=document.querySelector('.chat-display');
+        const messageCont=document.querySelector('.chat-message-container');
+        chatDisplay.style.display='none';
+        messageCont.style.display='block';
+    };
+});
 
 document.addEventListener('DOMContentLoaded',()=>{
     if (window.innerWidth<700) {        
