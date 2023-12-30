@@ -168,7 +168,10 @@ i {
 .nav-mobile ul li{
     list-style: none;
     margin:auto ;
-    padding: 25px;
+    padding: 15px;
+}
+.nav-mobile ul i{
+    font-size: larger;
 }
 
 /*
