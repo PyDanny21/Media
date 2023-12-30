@@ -20,11 +20,33 @@ function toggleMenu() {
     };
 };
 
-const Input=document.getElementById('input');
-const Btn=document.getElementById('btn');
-Input.addEventListener('keyup',()=>{
-    const typing=Input.value;
-    const changeBtn=typing==''?Btn.innerHTML='<i class="fas fa-microphone">':Btn.innerHTML='<i class="fas fa-paper-plane">';
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+    if (window.innerWidth<700) {        
+        $(document).ready(function () {
+            var lastScrollTop=0;
+            
+            // Detect scroll event
+            $(window).scroll(function (event) {
+                var st=$(this).scrollTop();
+        
+                // compare scroll position
+                if (st>lastScrollTop) {
+                    $('#bottomNav').slideUp();
+                } else {
+                    $('#bottomNav').slideDown();
+                }
+        
+                lastScrollTop=st;
+                
+            });
+            
+        });
+    };
+    
+    
+    
 });
 
 
@@ -54,31 +76,10 @@ Show.addEventListener('click',()=>{
     };
 });
 
-document.addEventListener('DOMContentLoaded',()=>{
-    if (window.innerWidth<700) {        
-        $(document).ready(function () {
-            var lastScrollTop=0;
-        
-            // Detect scroll event
-            $(window).scroll(function (event) {
-                var st=$(this).scrollTop();
-        
-                // compare scroll position
-                if (st>lastScrollTop) {
-                    $('#bottomNav').slideUp();
-                } else {
-                    $('#bottomNav').slideDown();
-                }
-        
-                lastScrollTop=st;
-                
-            });
-            
-        });
-    };
-
-
-
+const Input=document.getElementById('input');
+const Btn=document.getElementById('btn');
+Input.addEventListener('keyup',()=>{
+    const typing=Input.value;
+    const changeBtn=typing==''?Btn.innerHTML='<i class="fas fa-microphone">':Btn.innerHTML='<i class="fas fa-paper-plane">';
 });
-
 
